@@ -55,7 +55,7 @@ class Team(models.Model):
 
     name = models.CharField(max_length=50)
     short_name = models.CharField(max_length=50)
-    logo = models.FileField(upload_to='nba_simulator/static/nba_simulator/images/logos/')
+    logo = models.CharField(default="", max_length=8)
     general_manager = models.CharField(max_length=50)
     general_manager_nick = models.CharField(max_length=50)
     conference = models.CharField(max_length=2, choices=CONFERENCE)

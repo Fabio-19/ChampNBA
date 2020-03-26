@@ -6,6 +6,7 @@ from django import views
 class TeamListView(views.generic.ListView):
     model = Team
 
+
 class PlayerListView(views.generic.ListView):
     model = Player
 
